@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020AA2D02980659C00868D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2CF2980659C00868D47 /* AppDelegate.swift */; };
+		020AA2D22980659D00868D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2D12980659D00868D47 /* SceneDelegate.swift */; };
+		020AA2D42980659D00868D47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2D32980659D00868D47 /* ViewController.swift */; };
+		020AA2D72980659D00868D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020AA2D52980659D00868D47 /* Main.storyboard */; };
+		020AA2D92980659F00868D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020AA2D82980659F00868D47 /* Assets.xcassets */; };
+		020AA2DC2980659F00868D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020AA2DA2980659F00868D47 /* LaunchScreen.storyboard */; };
+		020AA2E929806A8D00868D47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 020AA2E829806A8D00868D47 /* GoogleService-Info.plist */; };
+		020AA2EC29807EAB00868D47 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2EB29807EAB00868D47 /* SignUpViewController.swift */; };
+		020AA2EE29807ECF00868D47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2ED29807ECF00868D47 /* LoginViewController.swift */; };
+		020AA2F029807EFB00868D47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2EF29807EFB00868D47 /* HomeViewController.swift */; };
+		020AA2F52981C3D600868D47 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020AA2F42981C3D600868D47 /* Utilities.swift */; };
+		022DE8342981CFBD00310BA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE8332981CFBD00310BA2 /* Constants.swift */; };
+		022DE83729832D9800310BA2 /* video_WebTitle_batch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 022DE83629832D9800310BA2 /* video_WebTitle_batch.mp4 */; };
+		022DE839298459C000310BA2 /* Tengen Toppa Gurren Lagann.icns in Resources */ = {isa = PBXBuildFile; fileRef = 022DE838298459C000310BA2 /* Tengen Toppa Gurren Lagann.icns */; };
+		022DE83C298802B500310BA2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE83B298802B500310BA2 /* PhotoViewController.swift */; };
+		022DE83E298802CC00310BA2 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE83D298802CC00310BA2 /* VideoPlayerViewController.swift */; };
+		022DE840298805F900310BA2 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE83F298805F900310BA2 /* NewConversationViewController.swift */; };
+		022DE84229880C7F00310BA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE84129880C7F00310BA2 /* ProfileViewController.swift */; };
+		022DE844298874D500310BA2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022DE843298874D500310BA2 /* DatabaseManager.swift */; };
+		4E11230FE6F59FC31FE84A41 /* Pods_DaWordUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A85BA086133A0DE83D7A4A9 /* Pods_DaWordUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020AA2CC2980659C00868D47 /* DaWordUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaWordUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		020AA2CF2980659C00868D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		020AA2D12980659D00868D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		020AA2D32980659D00868D47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		020AA2D62980659D00868D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		020AA2D82980659F00868D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		020AA2DB2980659F00868D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		020AA2DD2980659F00868D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020AA2E829806A8D00868D47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		020AA2EB29807EAB00868D47 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		020AA2ED29807ECF00868D47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		020AA2EF29807EFB00868D47 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		020AA2F42981C3D600868D47 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		022DE8332981CFBD00310BA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		022DE83629832D9800310BA2 /* video_WebTitle_batch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_WebTitle_batch.mp4; sourceTree = "<group>"; };
+		022DE838298459C000310BA2 /* Tengen Toppa Gurren Lagann.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Tengen Toppa Gurren Lagann.icns"; sourceTree = "<group>"; };
+		022DE83B298802B500310BA2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		022DE83D298802CC00310BA2 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		022DE83F298805F900310BA2 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		022DE84129880C7F00310BA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		022DE843298874D500310BA2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1A85BA086133A0DE83D7A4A9 /* Pods_DaWordUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaWordUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6AA0BBC34B942202A227D3 /* Pods-DaWordUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaWordUp.release.xcconfig"; path = "Target Support Files/Pods-DaWordUp/Pods-DaWordUp.release.xcconfig"; sourceTree = "<group>"; };
+		5EC2013456AE35F801079102 /* Pods-DaWordUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaWordUp.debug.xcconfig"; path = "Target Support Files/Pods-DaWordUp/Pods-DaWordUp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020AA2C92980659C00868D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E11230FE6F59FC31FE84A41 /* Pods_DaWordUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020AA2C32980659C00868D47 = {
+			isa = PBXGroup;
+			children = (
+				020AA2CE2980659C00868D47 /* DaWordUp */,
+				020AA2CD2980659C00868D47 /* Products */,
+				1F47938C88DF52A2C2F8827D /* Pods */,
+				067D5234FD3BA6863262D199 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		020AA2CD2980659C00868D47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020AA2CC2980659C00868D47 /* DaWordUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		020AA2CE2980659C00868D47 /* DaWordUp */ = {
+			isa = PBXGroup;
+			children = (
+				022DE83A2988021C00310BA2 /* MESSAGING */,
+				022DE83529832D3E00310BA2 /* Media */,
+				020AA2F12981C33A00868D47 /* Supporting */,
+				020AA2EA29807A8900868D47 /* LOGIN */,
+				020AA2CF2980659C00868D47 /* AppDelegate.swift */,
+				020AA2D12980659D00868D47 /* SceneDelegate.swift */,
+				020AA2D32980659D00868D47 /* ViewController.swift */,
+				022DE843298874D500310BA2 /* DatabaseManager.swift */,
+				020AA2D52980659D00868D47 /* Main.storyboard */,
+				020AA2D82980659F00868D47 /* Assets.xcassets */,
+				020AA2DA2980659F00868D47 /* LaunchScreen.storyboard */,
+				020AA2DD2980659F00868D47 /* Info.plist */,
+				020AA2E829806A8D00868D47 /* GoogleService-Info.plist */,
+			);
+			path = DaWordUp;
+			sourceTree = "<group>";
+		};
+		020AA2EA29807A8900868D47 /* LOGIN */ = {
+			isa = PBXGroup;
+			children = (
+				020AA2EB29807EAB00868D47 /* SignUpViewController.swift */,
+				020AA2ED29807ECF00868D47 /* LoginViewController.swift */,
+				020AA2EF29807EFB00868D47 /* HomeViewController.swift */,
+			);
+			path = LOGIN;
+			sourceTree = "<group>";
+		};
+		020AA2F12981C33A00868D47 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				020AA2F42981C3D600868D47 /* Utilities.swift */,
+				022DE8332981CFBD00310BA2 /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		022DE83529832D3E00310BA2 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				022DE838298459C000310BA2 /* Tengen Toppa Gurren Lagann.icns */,
+				022DE83629832D9800310BA2 /* video_WebTitle_batch.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		022DE83A2988021C00310BA2 /* MESSAGING */ = {
+			isa = PBXGroup;
+			children = (
+				022DE83B298802B500310BA2 /* PhotoViewController.swift */,
+				022DE83D298802CC00310BA2 /* VideoPlayerViewController.swift */,
+				022DE83F298805F900310BA2 /* NewConversationViewController.swift */,
+				022DE84129880C7F00310BA2 /* ProfileViewController.swift */,
+			);
+			path = MESSAGING;
+			sourceTree = "<group>";
+		};
+		067D5234FD3BA6863262D199 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A85BA086133A0DE83D7A4A9 /* Pods_DaWordUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F47938C88DF52A2C2F8827D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EC2013456AE35F801079102 /* Pods-DaWordUp.debug.xcconfig */,
+				3C6AA0BBC34B942202A227D3 /* Pods-DaWordUp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		020AA2CB2980659C00868D47 /* DaWordUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020AA2E02980659F00868D47 /* Build configuration list for PBXNativeTarget "DaWordUp" */;
+			buildPhases = (
+				02AB44D5D3A2BF0887E1038B /* [CP] Check Pods Manifest.lock */,
+				020AA2C82980659C00868D47 /* Sources */,
+				020AA2C92980659C00868D47 /* Frameworks */,
+				020AA2CA2980659C00868D47 /* Resources */,
+				8EBBB77ED920610FFEA4A2D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaWordUp;
+			packageProductDependencies = (
+			);
+			productName = DaWordUp;
+			productReference = 020AA2CC2980659C00868D47 /* DaWordUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		020AA2C42980659C00868D47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					020AA2CB2980659C00868D47 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 020AA2C72980659C00868D47 /* Build configuration list for PBXProject "DaWordUp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 020AA2C32980659C00868D47;
+			packageReferences = (
+			);
+			productRefGroup = 020AA2CD2980659C00868D47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				020AA2CB2980659C00868D47 /* DaWordUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		020AA2CA2980659C00868D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020AA2DC2980659F00868D47 /* LaunchScreen.storyboard in Resources */,
+				020AA2E929806A8D00868D47 /* GoogleService-Info.plist in Resources */,
+				020AA2D92980659F00868D47 /* Assets.xcassets in Resources */,
+				022DE839298459C000310BA2 /* Tengen Toppa Gurren Lagann.icns in Resources */,
+				020AA2D72980659D00868D47 /* Main.storyboard in Resources */,
+				022DE83729832D9800310BA2 /* video_WebTitle_batch.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02AB44D5D3A2BF0887E1038B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaWordUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBBB77ED920610FFEA4A2D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaWordUp/Pods-DaWordUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaWordUp/Pods-DaWordUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaWordUp/Pods-DaWordUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		020AA2C82980659C00868D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020AA2D42980659D00868D47 /* ViewController.swift in Sources */,
+				020AA2D02980659C00868D47 /* AppDelegate.swift in Sources */,
+				022DE844298874D500310BA2 /* DatabaseManager.swift in Sources */,
+				020AA2F52981C3D600868D47 /* Utilities.swift in Sources */,
+				022DE8342981CFBD00310BA2 /* Constants.swift in Sources */,
+				020AA2EC29807EAB00868D47 /* SignUpViewController.swift in Sources */,
+				022DE840298805F900310BA2 /* NewConversationViewController.swift in Sources */,
+				022DE84229880C7F00310BA2 /* ProfileViewController.swift in Sources */,
+				022DE83C298802B500310BA2 /* PhotoViewController.swift in Sources */,
+				020AA2EE29807ECF00868D47 /* LoginViewController.swift in Sources */,
+				022DE83E298802CC00310BA2 /* VideoPlayerViewController.swift in Sources */,
+				020AA2D22980659D00868D47 /* SceneDelegate.swift in Sources */,
+				020AA2F029807EFB00868D47 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		020AA2D52980659D00868D47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				020AA2D62980659D00868D47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		020AA2DA2980659F00868D47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				020AA2DB2980659F00868D47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		020AA2DE2980659F00868D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		020AA2DF2980659F00868D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		020AA2E12980659F00868D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC2013456AE35F801079102 /* Pods-DaWordUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaWordUp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enhanceit.DaWordUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020AA2E22980659F00868D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6AA0BBC34B942202A227D3 /* Pods-DaWordUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaWordUp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enhanceit.DaWordUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020AA2C72980659C00868D47 /* Build configuration list for PBXProject "DaWordUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020AA2DE2980659F00868D47 /* Debug */,
+				020AA2DF2980659F00868D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020AA2E02980659F00868D47 /* Build configuration list for PBXNativeTarget "DaWordUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020AA2E12980659F00868D47 /* Debug */,
+				020AA2E22980659F00868D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 020AA2C42980659C00868D47 /* Project object */;
+}
