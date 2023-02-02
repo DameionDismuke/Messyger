@@ -8,8 +8,11 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import JGProgressHUD
 
 class LoginViewController: UIViewController {
+    
+    private let spinner = JGProgressHUD(style: .dark)
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -17,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    
+    @IBOutlet weak var backButton: UIButton!
     
     // maybe ill add the functionality of being able to login after the user hits enter on the key pad https://www.youtube.com/watch?v=g7ipElQVpgU 29:00
 
@@ -37,7 +42,6 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(passwordTextField)
         
         Utilities.styleFilledButton(loginButton)
-        
         
     }
 
@@ -63,6 +67,7 @@ class LoginViewController: UIViewController {
         return nil
         
     }
+    
     var deeznutz = 0
     @IBAction func loginTapped(_ sender: Any) {
         //validate fields
@@ -79,12 +84,16 @@ class LoginViewController: UIViewController {
             
             //stop failing the signin
             
-            
+            spinner.show(in: view)
             // sign in the user
-            Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
+                FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
                 
+                    DispatchQueue.main.async {
+                        self.spinner.dismiss()
+                    }
                 //check for errors
                 if err != nil {
+                    
                     self.deeznutz += 1
                     //couldn't sign in
                     switch self.deeznutz {
@@ -106,16 +115,18 @@ class LoginViewController: UIViewController {
                         self.showError("Try it again")
                     }
                 }
-                else {
                     
+                else {
+                    let user = result!.user
+                    print("Logged in User: \(user)")
+                    
+                    self.navigationController?.dismiss(animated: true, completion: nil)
                     // transition to the home screen
                     self.transitionToHome()
                     
                 }
             }
-            
         }
-        
     }
     
     func showError(_ message: String) {

@@ -9,11 +9,14 @@ import UIKit
 import FirebaseAuth
 import Firebase
 import FirebaseFirestore
+import JGProgressHUD
 
 
 
 class SignUpViewController: UIViewController {
-
+    
+    private let spinner = JGProgressHUD(style: .dark)
+    
     @IBOutlet weak var profileImage: UIImageView!
     
     
@@ -25,11 +28,13 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpElements()
-
+        
         
     }
     
@@ -48,15 +53,12 @@ class SignUpViewController: UIViewController {
         
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-
+        
         Utilities.styleFilledButton(signUpButton)
         
         
-        //profileImage.layer.masksToBounds = true
-        profileImage.layer.borderWidth = 1
-        profileImage.layer.borderColor = UIColor.black.cgColor
+        profileImage.layer.masksToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.size.width/2
-        profileImage.clipsToBounds = true
         
         
     }
@@ -85,11 +87,13 @@ class SignUpViewController: UIViewController {
         return nil
         
     }
-
+    
     @objc func didTapChangeProfilePic(){ //bringing up the picture selector and camera
         presentPhotoActionSheet()
     }
- 
+    
+    
+    
     @IBAction func signUpTapped(_ sender: Any){
         //validate fields
         let error = validateFields()
@@ -98,39 +102,54 @@ class SignUpViewController: UIViewController {
             showError(error!)
         }
         else {
-            
-            
-            
-            
+
             //create cleaned versions of the data
             let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
-            // create the user
-            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-                
-                //check for errors
-                if err != nil {
-                    //there was an error creating the user
-                    self.showError("Error creating user")
+            DatabaseManager.shared.userExists(with: email, completion: { [weak self] exists in
+                guard let strongSelf = self else {
+                    return
                 }
-                else {
+                
+                guard !exists else {
+                    //user already exists
+                    strongSelf.showError("Error creating user because user already exists")
+                    return
+                }
+                
+                // create the user
+                FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                     
-                    //User created successfully, now store the first name and last name
-                    let db = Firestore.firestore()
-                    
-                    db.collection("users").addDocument(data: ["firstName":firstName, "lastName":lastName, "uid": result!.user.uid]){(error ) in
+                    //check for errors
+                    if err != nil {
+                        //there was an error creating the user
+                        self?.showError("Error creating user")
+                    }
+                    else {
                         
-                        if error != nil {
-                            self.showError("error saving user data")
+                    
+                        //User created successfully, now store the first name and last name
+                        let db = Firestore.firestore()
+                        DatabaseManager.shared.insertUser(with: MessyUser(firstName: firstName, lastName: lastName, emailAddress : email))
+                                                          
+                        db.collection("users").addDocument(data: ["firstName":firstName, "lastName":lastName, "uid": result!.user.uid]){(error ) in
+                            
+                            if error != nil {
+                                self?.showError("error saving user data")
+                            }
                         }
                     }
                 }
-            }
-            // transition to the home screen
-            self.transitionToHome()
+                
+                // transition to the home screen
+                self?.transitionToHome()
+            })
+            
+            
+            
         }
         
     }
